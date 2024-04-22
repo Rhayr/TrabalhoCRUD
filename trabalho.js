@@ -50,3 +50,7 @@ function deletarPessoa() {
     }
 }
 
+function listarPessoas(){
+    console.log(listaPessoas);
+    return listaPessoas;
+}
