@@ -1,4 +1,4 @@
-const listaPessoas = [];
+let listaPessoas = [];
 
 function gerarId(){
     return Math.floor(Math.random() * 100);  
@@ -37,3 +37,16 @@ function atualizarPessoa() {
         console.log("Pessoa não cadastrada no sistema.")
     }
 }
+
+function deletarPessoa() {
+    const id = prompt("Digite o Id da pessoa que deseja deletar: ");
+    const remover = listaPessoas.findIndex(pessoa => pessoa.id === parseInt(id, 10));
+
+    if (remover !== -1) {
+        const pessoaRemovida = listaPessoas.splice(remover, 1);
+        console.log("Pessoa deletada: ", pessoaRemovida[0]);
+    } else {
+        console.log("Pessoa não encontrada na lista.");
+    }
+}
+
