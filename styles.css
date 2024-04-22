@@ -1,0 +1,27 @@
+body{
+    background-color: aliceblue;
+    margin: 20px;
+}
+
+.texto{
+   font-size: 20px; 
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #1e252c; 
+    color: #fff; 
+}
+
+button:hover {
+    background-color: #4370a0; 
+}
+
+button:active {
+    background-color: #618ebb; 
+}
